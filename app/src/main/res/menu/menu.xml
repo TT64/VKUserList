@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search_users"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/menu_item_search_title"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_my_friends"
+        android:onClick="getFriends"
+        android:title="@string/menu_item_my_friends_title"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_personal_info"
+        android:onClick="getPersonalInfo"
+        android:title="@string/menu_item_pers_info_title"
+        app:showAsAction="never" />
+
+</menu>

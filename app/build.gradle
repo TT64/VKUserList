@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "app.line.good.androidtestapp"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:' + rootProject.ext.androidAppCompatVersion
+    implementation 'com.android.support.constraint:constraint-layout:' + rootProject.ext.androidSupConstLayoutVersion
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.ext.androidSupConstLayoutVersion
+    implementation 'com.android.support:design:' + rootProject.ext.androidSupportVersion
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.ext.androidSupConstLayoutVersion
+    testImplementation 'junit:junit:' + rootProject.ext.androidJUnitVersion
+    testImplementation 'org.mockito:mockito-all:1.10.17'
+    androidTestImplementation 'androidx.test:core:1.2.0'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test:runner:' + rootProject.ext.androidTestRunnerVersion
+    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.ext.androidEspressoVersion
+
+    testImplementation 'androidx.test:rules:1.2.0'
+
+    implementation 'com.github.bumptech.glide:glide:' + rootProject.ext.androidGlideVersion
+    annotationProcessor 'com.github.bumptech.glide:compiler:' + rootProject.ext.androidGlideVersion
+
+    implementation 'com.vk:androidsdk:' + rootProject.ext.androidVKSdkVersion
+}

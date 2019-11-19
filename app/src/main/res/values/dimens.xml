@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_rv_bot_margin">8dp</dimen>
+    <dimen name="activity_detail_iv_start_margin">8dp</dimen>
+    <dimen name="activity_detail_iv_top_margin">8dp</dimen>
+    <dimen name="activity_detail_iv_end_margin">8dp</dimen>
+    <dimen name="activity_detail_tv_padding">10dp</dimen>
+    <dimen name="activity_detail_tv_start_margin">24dp</dimen>
+    <dimen name="activity_detail_tv_top_margin">8dp</dimen>
+    <dimen name="activity_detail_tv_end_margin">24dp</dimen>
+    <dimen name="activity_detail_tv_textsize">20sp</dimen>
+    <dimen name="dialog_progress_load_pb_end_margin">5dp</dimen>
+    <dimen name="item_empty_tv_start_margin">16dp</dimen>
+    <dimen name="item_empty_tv_top_margin">20dp</dimen>
+    <dimen name="item_empty_tv_end_margin">16dp</dimen>
+    <dimen name="item_empty_tv_bot_margin">20dp</dimen>
+    <dimen name="item_empty_tv_textsize">18sp</dimen>
+    <dimen name="item_friend_iv_start_margin">16dp</dimen>
+    <dimen name="item_friend_iv_top_margin">8dp</dimen>
+    <dimen name="item_friend_iv_bot_margin">8dp</dimen>
+    <dimen name="item_friend_tv_start_margin">8dp</dimen>
+    <dimen name="item_friend_tv_end_margin">8dp</dimen>
+    <dimen name="item_user_iv_photo_start_margin">16dp</dimen>
+    <dimen name="item_user_iv_photo_top_margin">8dp</dimen>
+    <dimen name="item_user_iv_photo_bot_margin">8dp</dimen>
+    <dimen name="item_user_tv_top_margin">16dp</dimen>
+    <dimen name="item_user_tv_start_margin">16dp</dimen>
+    <dimen name="item_user_tv_end_margin">16dp</dimen>
+    <dimen name="activity_detail_land_iv_start_margin">2dp</dimen>
+    <dimen name="activity_detail_land_tv_end_margin">2dp</dimen>
+    <dimen name="activity_pers_info_lastseen_tv_top_margin">8dp</dimen>
+    <dimen name="activity_pers_info_lastseen_tv_end_margin">24dp</dimen>
+    <dimen name="activity_pers_info_lastseen_tv_textsize">16sp</dimen>
+    <dimen name="activity_pers_info_name_tv_top_margin">8dp</dimen>
+    <dimen name="dialog_progress_load_ll_padding">13dp</dimen>
+</resources>
