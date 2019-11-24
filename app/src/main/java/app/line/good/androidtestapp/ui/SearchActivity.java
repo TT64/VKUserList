@@ -51,8 +51,6 @@ public class SearchActivity extends AppCompatActivity implements SearchActivityC
     private SearchActivityPresenter presenter;
     private NetworkChangeReceiver receiver;
 
-    private SharedPreferences prefs;
-
     private boolean isGrantPerm = false, loadingMore = false;
     private int offset = 0, count = 20;
     private String query;
@@ -74,8 +72,7 @@ public class SearchActivity extends AppCompatActivity implements SearchActivityC
 
         initRecyclerView();
 
-        prefs = getSharedPreferences(Constants.PREF_NAME, MODE_PRIVATE);
-        isGrantPerm = prefs.getBoolean(Constants.KEY_IS_GRANT_PERM, false);
+        isGrantPerm = VKSdk.isLoggedIn();
         if (!isGrantPerm) {
             VKSdk.login(SearchActivity.this, VKScope.WALL);
         }
@@ -169,7 +166,6 @@ public class SearchActivity extends AppCompatActivity implements SearchActivityC
             @Override
             public void onResult(VKAccessToken res) {
                 findViewById(R.id.btn_login_vk).setVisibility(View.GONE);
-                prefs.edit().putBoolean(Constants.KEY_IS_GRANT_PERM, true).apply();
                 isGrantPerm = true;
                 changeFocusOnSearchView(false);
             }
